@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>CV</title>
+  </head>
+  <body>
+    <!-- ----------------------------------------------- -->
+    <!-- header -->
+    <header class="header">
+      <nav class="header-nav">
+        <div class="w-full h-full flex items-center justify-start px-10 gap-2">
+          <img
+            src="./image/open-book.png"
+            class="w-[50px] h-[50px] cursor-pointer"
+            alt="openBook"
+          />
+          <p class="text-3xl font-bold cursor-pointer text-white">ebook</p>
+        </div>
+        <div class="w-full h-full flex items-center justify-evenly">
+          <div class="lg:flex md:hidden hidden items-center gap-7 w-[60%]">
+            <p class="cursor-pointer text-[#f4a261] font-bold">Home</p>
+            <p class="cursor-pointer font-bold text-white hover:text-[#f4a261]">
+              The Book
+            </p>
+            <p class="cursor-pointer font-bold text-white hover:text-[#f4a261]">
+              Author
+            </p>
+            <p class="cursor-pointer font-bold text-white hover:text-[#f4a261]">
+              Reviews
+            </p>
+            <p class="cursor-pointer font-bold text-white hover:text-[#f4a261]">
+              Contact
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-end gap-5 px-3 lg:w-[150px] md:w-full w-full"
+          >
+            <button
+              class="border-2 border-[#f4a261] text-white font-bold py-2 w-[128px] h-[37] rounded-full hover:bg-red-500 hover:border-none"
+            >
+              Download
+            </button>
+            <div
+              class="inline-block lg:hidden md:inline-block cursor-pointer"
+              onclick="menuClick(this)"
+            >
+              <div
+                class="bar1 w-[35px] h-[5px] bg-white transition-[0.4s] my-[6px] mx-0"
+              ></div>
+              <div
+                class="bar2 w-[35px] h-[5px] bg-white transition-[0.4s] my-[6px] mx-0"
+              ></div>
+              <div
+                class="bar3 w-[35px] h-[5px] bg-white transition-[0.4s] my-[6px] mx-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="myMenuClick"
+          class="absolute top-[12vh] left-0 bg-black w-full h-[18vh] text-center hidden"
+        >
+          <p class="cursor-pointer text-red-500 font-bold">Home</p>
+          <p class="cursor-pointer font-bold text-white hover:text-red-500">
+            The Book
+          </p>
+          <p class="cursor-pointer font-bold text-white hover:text-red-500">
+            Author
+          </p>
+          <p class="cursor-pointer font-bold text-white hover:text-red-500">
+            Reviews
+          </p>
+          <p class="cursor-pointer font-bold text-white hover:text-red-500">
+            Contact
+          </p>
+        </div>
+      </nav>
+      <div class="header-div">
+        <div class="header-text">
+          <p class="text-2xl font-bold text-[#E9C46A]">Introducing ebook</p>
+          <p class="lg:text-5xl md:text-5xl text-3xl text-center text-white">
+            ebook landing page for professionals
+          </p>
+          <div class="flex gap-5 items-center">
+            <button
+              class="w-[168px] h-[41px] bg-[#f4a261] text-white hover:bg-red-500 font-bold rounded-full"
+            >
+              discover more
+            </button>
+            <p
+              class="hover:-translate-y-1 hover:border-b-4 border-red-500 text-white hover:text-red-500 cursor-pointer"
+            >
+              Meet the Author
+            </p>
+          </div>
+        </div>
+      </div>
+      <span
+        class="w-full h-[20vh] bg-[#F4A261] flex items-center absolute bottom-0"
+      >
+        <div class="divIcon">
+          <div class="flex">
+            <span class="w-[60px] h-[60px] bg-black border-2 rounded-full">
+              <img
+                src="./image/studio-portrait-emotional-happy-funny-smiling-boyfriend.jpg"
+                class="w-full h-full rounded-full"
+                alt=""
+              />
+            </span>
+            <span class="w-[60px] h-[60px] bg-black border-2 rounded-full">
+              <img
+                src="./image/portrait-beautiful-young-woman-standing-grey-wall.jpg"
+                class="w-full h-full rounded-full"
+                alt=""
+              />
+            </span>
+            <span class="w-[60px] h-[60px] bg-black border-2 rounded-full">
+              <img
+                src="./image/portrait-young-redhead-bearded-male.jpg"
+                class="w-full h-full rounded-full"
+                alt=""
+              />
+            </span>
+            <span class="w-[60px] h-[60px] bg-black border-2 rounded-full">
+              <img
+                src="./image/pretty-blonde-woman.jpg"
+                class="w-full h-full rounded-full"
+                alt=""
+              />
+            </span>
+          </div>
+          <div class="flex items-center lg:text-4xl md:text-4xl text-sm">
+            <p>4.5</p>
+            <img
+              src="./image/216411_star_icon.svg"
+              class="w-[16px] h-[16px]"
+              alt=""
+            />
+            <img
+              src="./image/216411_star_icon.svg"
+              class="w-[16px] h-[16px]"
+              alt=""
+            />
+            <img
+              src="./image/216411_star_icon.svg"
+              class="w-[16px] h-[16px]"
+              alt=""
+            />
+            <img
+              src="./image/216411_star_icon.svg"
+              class="w-[16px] h-[16px]"
+              alt=""
+            />
+          </div>
+          <p class="font-bold">2,564 reviews</p>
+        </div>
+      </span>
+      <div
+        class="w-[500px] h-[500px] bg-white z-0 absolute -bottom-[208px] -right-[300px] -rotate-[52deg]"
+      ></div>
+      <div>
+        <img
+          src="./image/education-online-books.png"
+          class="imgBookeducation"
+          alt="education book"
+        />
+      </div>
+    </header>
+    <!-- header -->
+    <!-- ----------------------------------------------- -->
+    <!-- navigation1 -->
+    <section class="navigation1Section">
+      <div class="w-full h-full flex items-center justify-center">
+        <img
+          src="./image/tablet-screen-contents.jpg"
+          class="lg:w-[636px] md:w-[696px] w-[397px] lg:h-[434px] md:h-[485px] h-[276px] z-20"
+          alt=""
+        />
+      </div>
+      <div class="navigation1divText">
+        <p class="text-[#E9C46A] text-2xl font-bold">Modern & Creative</p>
+        <p class="text-4xl text-black font-bold">About The Book</p>
+        <p
+          class="text-xl font-bold text-gray-500 lg:text-start md:text-center text-center"
+        >
+          Credit goes to FreePik for images used in this ebook landing page
+          template. You may browse FreePik to download more free images for your
+          website.
+        </p>
+        <p
+          class="text-xl font-bold text-gray-500 lg:text-start md:text-center text-center"
+        >
+          TemplateMo is one of the best websites to download free CSS templates
+          for any purpose. This is an ebook landing page template using
+          Bootstrap 5 CSS layout.
+        </p>
+      </div>
+    </section>
+
+    <!-- navigation1 -->
+    <!-- ------------------------------------------------ -->
+    <!-- navigation2 -->
+    <section class="w-full h-[20vh] flex flex-col items-center justify-center">
+      <p class="text-[#E9C46A] font-bold text-2xl">What's inside?</p>
+      <p class="text-5xl font-bold">Preview at glance</p>
+    </section>
+    <!-- navigation2 -->
+    <!-- ------------------------------------------------- -->
+    <!-- navigation3 -->
+    <section
+      class="w-full lg:h-[400vh] md:h-[530vh] h-[540vh] flex lg:flex-row md:flex-col flex-col"
+    >
+      <div class="w-full lg:h-full md:-[500px] py-5">
+        <div
+          class="lg:w-[416px] lg:h-[433px] md:w-[80%] md:h-[409px] w-[90%] h-[409px] border-2 rounded-2xl border-red-400 mx-auto lg:sticky lg:top-28 flex flex-col items-center justify-evenly"
+        >
+          <p
+            class="w-[90%] h-[8vh] flex items-center justify-center bg-red-500 cursor-pointer rounded-full font-bold text-white"
+          >
+            introduction
+          </p>
+          <p
+            class="w-[90%] h-[8vh] flex items-center justify-center hover:bg-red-500 bg-gray-300 cursor-pointer rounded-full font-bold"
+          >
+            chapter1:win back your time
+          </p>
+          <p
+            class="w-[90%] h-[8vh] flex items-center justify-center hover:bg-red-500 bg-gray-300 cursor-pointer rounded-full font-bold"
+          >
+            chapter2:work less,do more
+          </p>
+          <p
+            class="w-[90%] h-[8vh] flex items-center justify-center hover:bg-red-500 bg-gray-300 cursor-pointer rounded-full font-bold"
+          >
+            chapter3:delegate
+          </p>
+          <p
+            class="w-[90%] h-[8vh] flex items-center justify-center hover:bg-red-500 bg-gray-300 cursor-pointer rounded-full font-bold"
+          >
+            chapter4:habits
+          </p>
+        </div>
+      </div>
+      <!-- - -->
+      <div class="w-full h-full py-5 px-5">
+        <div
+          class="lg:w-[796px] md:w-[796px] w-full mx-auto flex flex-col gap-5 border-b-2 border-dashed"
+        >
+          <p class="text-3xl font-bold">Introducing ebook</p>
+          <p class="text-gray-500">
+            This ebook landing page is good to use for any purpose. This layout
+            is based on Bootstrap 5 CSS framework.
+          </p>
+          <p class="text-gray-500">
+            What is Content Marketing? If you are wondering what content
+            marketing is all about, this is the place to start.
+          </p>
+          <div
+            class="w-full h-[202px] text-3xl text-center bg-[#f0f8ff] flex items-center justify-center"
+          >
+            Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm
+            tokito
+          </div>
+          <p class="text-gray-500 pb-2">
+            When you need free HTML CSS templates, please visit Templatemo
+            website which provides a variety of templates.
+          </p>
+        </div>
+        <div
+          class="lg:w-[796px] md:w-[796px] w-full mx-auto py-3 flex flex-col gap-5 border-b-2 border-dashed"
+        >
+          <p class="text-3xl font-bold">Win back your time</p>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="text-gray-500">
+            Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam
+            quis metus elementum, tempor risus vel, condimentum orci.
+          </p>
+          <p class="text-gray-500">
+            You are not allowed to redistribute this template ZIP file on any
+            other template collection website. Please contact TemplateMo for
+            more information.
+          </p>
+          <div class="flex lg:flex-row md:flex-col flex-col gap-3">
+            <img
+              src="./image/zip1.jpg"
+              class="lg:w-[386px] lg:h-[257px] md:w-[90%] md:h-[400Px] w-[90%] h-[300px] rounded-2xl mx-auto"
+              alt="zipFile"
+            /><img
+              src="./image/zip2.jpg"
+              class="lg:w-[386px] lg:h-[257px] md:w-[90%] md:h-[400Px] w-[90%] h-[300px] rounded-2xl mx-auto"
+              alt="zipFile"
+            />
+          </div>
+          <p class="text-gray-500 pb-2">
+            If you need some specific CSS templates, you can Google with
+            keywords such as templatemo gallery, templatemo digital marketing,
+            etc.
+          </p>
+        </div>
+        <div
+          class="lg:w-[796px] md:w-[796px] py-3 w-full mx-auto flex flex-col gap-5 border-b-2 border-dashed"
+        >
+          <p class="text-3xl font-bold">Work less, do more</p>
+          <p class="text-gray-500">
+            Credit goes to FreePik for images used in this ebook landing page
+            template. You may browse FreePik to download more free images for
+            your website.
+          </p>
+          <p class="text-gray-500">
+            This is a second paragraph. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt.
+          </p>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet, consive adipisicing elit, sed do
+            eiusmod. tempor incididunt ut labore.
+          </p>
+          <div
+            class="flex lg:flex-row md:flex-col flex-col items-center gap-3 pb-4"
+          >
+            <img
+              src="./image/tablet-screen-contents.jpg"
+              class="w-[389px] h-[269]"
+              alt=""
+            />
+            <p class="text-gray-500">
+              Modern ebook ever Lorem ipsum dolor sit amet, consive adipisicing
+              elit, sed do eiusmod. tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div
+          class="lg:w-[796px] md:w-[796px] py-3 w-full mx-auto flex flex-col gap-5 border-b-2 border-dashed"
+        >
+          <p class="text-3xl font-bold">Delegate</p>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet, consive adipisicing elit, sed do
+            eiusmod. tempor incididunt ut labore.
+          </p>
+          <p class="text-gray-500">
+            You are not allowed to redistribute this template ZIP file on any
+            other template collection website. Please contact TemplateMo for
+            more information.
+          </p>
+
+          <img
+            src="./image/zip1.jpg"
+            class="lg:w-[796px] md:w-[636px] w-[456px] lg:h-[530px] md:h-[424px] h-[304px] rounded-2xl mx-auto"
+            alt=""
+          />
+
+          <p class="pb-4 text-gray-500">
+            You may want to contact us for more information about this template.
+          </p>
+        </div>
+        <div
+          class="lg:w-[796px] md:w-[796px] w-full py-4 mx-auto flex flex-col gap-5 border-b-2 border-dashed"
+        >
+          <p class="text-3xl font-bold">Habits</p>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="text-gray-500">
+            What is Free CSS Templates? Free CSS Templates are a variety of
+            ready-made web pages designed for different kinds of websites.
+          </p>
+          <div
+            class="w-full h-[202px] text-3xl text-center bg-[#f0f8ff] flex items-center justify-center"
+          >
+            Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm
+            tokito
+          </div>
+          <p class="text-gray-500 pb-2">
+            You may browse TemplateMo website for more CSS templates. Thank you
+            for visiting our website.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- navigation3 -->
+    <!-- ---------------------------------- -->
+    <!-- navigation4 -->
+    <section
+      class="w-full lg:h-[60vh] md:h-[100vh] h-[100vh] flex lg:flex-row md:flex-col flex-col items-center justify-evenly"
+    >
+      <img
+        src="./image/zip1.jpg"
+        class="w-[350px] h-[350px] rounded-full border-8 border-yellow-400"
+        alt=""
+      />
+      <div
+        class="flex flex-col items-center justify-center gap-5 lg:px-0 md:px-3 px-3"
+      >
+        <p class="text-[#E9C46A] text-2xl">Meet Author</p>
+        <p class="text-4xl font-bold">Prof. Sophia</p>
+        <p class="text-gray-500 text-center">
+          This is an ebook landing page template with Bootstrap 5 CSS framework.
+          It is easy to customize with the use of Bootstrap CSS classes.
+        </p>
+        <p class="text-gray-500 text-center">
+          Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod.
+          tempor incididunt ut labore.
+        </p>
+      </div>
+    </section>
+    <!-- navigation4 -->
+    <!-- ------------------------------------------- -->
+    <!-- navigation5 -->
+    <section class="w-full h-[20vh] flex flex-col items-center justify-center">
+      <p class="text-2xl font-bold text-[#E9C46A]">Reviews</p>
+      <p class="text-4xl">What people saying...</p>
+    </section>
+    <!-- navigation5 -->
+    <!-- ---------------------------------------------- -->
+    <!-- navigation6 -->
+    <section
+      class="w-full lg:h-[80vh] md:h-[160vh] h-[170vh] flex lg:flex-row md:flex-col flex-col items-center lg:justify-center md:justify-start py-4 gap-6"
+    >
+      <div
+        class="flex flex-col items-start justify-end z-10 rounded-2xl gap-10 opacity-90 px-5 bg-[url('../src/image/zip2.jpg')] bg-cover relative bg-center lg:w-[416px] lg:h-[407px] md:w-[696px] md:h-[349px] w-[90%] h-[378px]"
+      >
+        <div
+          class="absolute top-0 left-[50%] translate-x-[-50%] flex flex-col items-center justify-evenly opacity-90 rounded-b-2xl bg-red-500 w-[151px] h-[174px]"
+        >
+          <img
+            src="./image/pretty-blonde-woman.jpg"
+            class="w-[60px] h-[60px] rounded-full border-2 border-yellow-400"
+            alt=""
+          />
+          <p class="font-bold">
+            Sandy<br />
+            Artist
+          </p>
+        </div>
+        <div class="flex items-center text-4xl">
+          <p class="text-black font-bold">4.5</p>
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+        </div>
+        <p class="pb-2 text-black font-bold">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <!-- --------- -->
+      <div
+        class="flex flex-col items-start justify-end z-10 rounded-2xl gap-10 opacity-90 px-5 bg-[url('../src/image/zip2.jpg')] bg-cover relative bg-center lg:w-[416px] lg:h-[407px] md:w-[696px] md:h-[349px] w-[90%] h-[378px]"
+      >
+        <div
+          class="absolute top-0 left-[50%] translate-x-[-50%] flex flex-col items-center justify-evenly opacity-90 rounded-b-2xl bg-red-500 w-[151px] h-[174px]"
+        >
+          <img
+            src="./image/pretty-blonde-woman.jpg"
+            class="w-[60px] h-[60px] rounded-full border-2 border-yellow-400"
+            alt=""
+          />
+          <p class="font-bold">
+            Sandy<br />
+            Artist
+          </p>
+        </div>
+        <div class="flex items-center text-4xl">
+          <p class="text-black font-bold">4.5</p>
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+        </div>
+        <p class="pb-2 text-black font-bold">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <!-- ------------------------------ -->
+      <div
+        class="flex flex-col items-start justify-end z-10 rounded-2xl gap-10 opacity-90 px-5 bg-[url('../src/image/zip2.jpg')] bg-cover relative bg-center lg:w-[416px] lg:h-[407px] md:w-[696px] md:h-[349px] w-[90%] h-[378px]"
+      >
+        <div
+          class="absolute top-0 left-[50%] translate-x-[-50%] flex flex-col items-center justify-evenly opacity-90 rounded-b-2xl bg-red-500 w-[151px] h-[174px]"
+        >
+          <img
+            src="./image/pretty-blonde-woman.jpg"
+            class="w-[60px] h-[60px] rounded-full border-2 border-yellow-400"
+            alt=""
+          />
+          <p class="font-bold">
+            Sandy<br />
+            Artist
+          </p>
+        </div>
+        <div class="flex items-center text-4xl">
+          <p class="text-black font-bold">4.5</p>
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+          <img
+            src="./image/216411_star_icon.svg"
+            class="w-[16px] h-[16px]"
+            alt=""
+          />
+        </div>
+        <p class="pb-2 text-black font-bold">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+    <!-- navigation6 -->
+    <!-- footer -->
+    <footer
+      class="w-full lg:h-[100vh] md:h-[120vh] h-[130vh] bg-[#f4a261] relative gap-10 flex lg:flex-row md:flex-col flex-col items-center justify-center"
+    >
+      <div
+        class="absolute -top-[250px] -left-[300px] w-[600px] h-[600px] -skew-x-2 bg-white -skew-y-[50deg] z-0"
+      ></div>
+      <div
+        class="lg:w-[526px] lg:h-[436px] md:w-[696px] md:h-[353px] w-[90%] h-[353px] z-10 bg-white shadow-2xl border-2 rounded-2xl border-black"
+      >
+        <form class="flex w-full h-full flex-col items-center justify-evenly">
+          <label class="text-3xl font-bold"
+            >Get your free<br />
+            ebook</label
+          >
+          <input
+            type="text"
+            placeholder="yor Name"
+            class="bg-gray-500 w-[90%] p-5 outline-none text-white"
+          />
+          <input
+            type="text"
+            placeholder="yor@company.com"
+            class="bg-gray-500 w-[90%] p-5 outline-none text-white"
+          />
+          <button
+            class="bg-[#f4a261] hover:bg-red-500 w-[50%] p-3 rounded-full text-white font-bold"
+          >
+            download Ebook
+          </button>
+        </form>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4">
+          <p class="text-3xl font-bold text-[#E9C46A]">
+            Say hi and talk to us<br />
+            <span class="text-4xl text-black">Contact</span>
+          </p>
+          <p class="text-3xl text-white font-bold">
+            London, United Kingdom<br />
+            <span class="hover:text-red-500 cursor-pointer">010-020-0340</span
+            ><br />
+            <span class="hover:text-red-500 cursor-pointer"
+              >info@company.com</span
+            >
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <p class="text-2xl text-[#E9C46A]">Social</p>
+          <div>
+            <button
+              class="w-[40px] h-[40px] rounded-full bg-[#E9C46A] hover:bg-red-500"
+            ></button>
+            <button
+              class="w-[40px] h-[40px] rounded-full bg-[#E9C46A] hover:bg-red-500"
+            ></button>
+            <button
+              class="w-[40px] h-[40px] rounded-full bg-[#E9C46A] hover:bg-red-500"
+            ></button>
+            <button
+              class="w-[40px] h-[40px] rounded-full bg-[#E9C46A] hover:bg-red-500"
+            ></button>
+          </div>
+          <p class="text-white">Copyright © 2048 ebook company</p>
+          <p class="text-red-500">designed by templatemo</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+  <script src="java.js"></script>
+</html>

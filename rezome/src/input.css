@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ----------------------------- */
+
+.header {
+  @apply bg-[url('../src/image/aaron-burden-CKlHKtCJZKk-unsplash.jpg')] bg-cover bg-center lg:h-[110vh] md:h-[170vh] h-[140vh] flex flex-col items-start justify-start relative;
+}
+.header-nav {
+  @apply w-full h-[13vh]   flex  items-center md:bg-black lg:bg-inherit bg-black md:opacity-70 lg:opacity-100 opacity-70 fixed left-0 top-0 z-50;
+}
+.header-div {
+  @apply w-full lg:mt-[100px] lg:h-[50vh] md:h-[42vh] h-[48vh]  flex items-end;
+}
+.header-text {
+  @apply lg:w-1/2 lg:h-[40vh] md:w-full md:h-[27vh] h-[30vh]   flex flex-col lg:gap-5 md:gap-5 gap-4 lg:pb-0 md:pb-0 pb-10  items-center justify-center;
+}
+.change .bar1 {
+  @apply translate-x-0 translate-y-[11px] rotate-[-45deg];
+}
+.change .bar2 {
+  @apply opacity-0;
+}
+.change .bar3 {
+  @apply translate-x-0 translate-y-[-11px] rotate-[45deg];
+}
+.divIcon {
+  @apply w-full lg:h-[15vh] md:h-[15vh] h-full  flex lg:flex-row md:flex-row flex-col items-center lg:justify-normal md:justify-normal justify-center px-10 lg:gap-5 md:gap-5 gap-1 z-10;
+}
+.imgBookeducation {
+  @apply lg:w-[636px] lg:h-[793px] md:w-[696px] md:h-[868px] w-[561px] h-[644] absolute lg:-bottom-24 lg:right-20 md:bottom-28 md:right-[15%] bottom-[140px];
+}
+
+.active {
+  @apply bg-black opacity-80;
+}
+
+/* ------------------------ */
+/* navigation1 */
+.navigation1Section {
+  @apply lg:h-[80vh] md:h-[140vh] h-[110vh] w-full  flex lg:flex-row md:flex-col flex-col;
+}
+
+.navigation1divText {
+  @apply w-full h-full  flex flex-col lg:items-start md:items-center items-center  justify-center gap-5 px-5 lg:py-0 md:py-2 py-0;
+}
+/* navigation1 */
